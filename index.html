@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeeya Chollangi | Software Developer & AI/ML Student</title>
+  <meta name="description" content="Professional portfolio of Jeeya Chollangi, a Computer Science graduate specializing in Python, Java, Web Development, and AI/ML solutions.">
+  <meta name="keywords" content="Jeeya Chollangi, Software Developer, Python, Java, AI, ML, Portfolio, Web Developer, MySQL">
+  <meta name="author" content="Jeeya Chollangi">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jeeya Chollangi | Software Developer Portfolio">
+  <meta property="og:description" content="Discover the professional portfolio of Jeeya Chollangi, showcasing Web Development, Python programming, and AI/ML projects.">
+  <meta property="og:image" content="assets/profile.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor-dot" id="cursor-dot"></div>
+  <div class="custom-cursor-outline" id="cursor-outline"></div>
+
+  <!-- Background Particles Canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Header & Navigation -->
+  <header class="main-header" id="header">
+    <div class="header-container">
+      <a href="#home" class="logo" id="header-logo">
+        <span class="logo-icon">&lt;/&gt;</span>
+        Jeeya<span class="accent-dot">.</span>
+      </a>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#journey" class="nav-link">Journey</a></li>
+          <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-right">
+        <a href="#contact" class="cta-nav-btn hover-trigger">Hire Me</a>
+        <button class="hamburger" id="hamburger-btn" aria-label="Toggle Navigation Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="section-container hero-grid">
+        <div class="hero-content scroll-reveal">
+          <div class="status-badge">
+            <span class="pulse-indicator"></span>
+            Available for new opportunities
+          </div>
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Jeeya Chollangi</span>
+          </h1>
+          <h2 class="hero-subtitle">
+            <span class="static-subtitle">I'm a </span>
+            <span class="typing-text" id="typing-element"></span>
+          </h2>
+          <p class="hero-description">
+            A motivated Computer Science graduate specializing in Artificial Intelligence & Machine Learning. Strong programming foundations in Python and Java, dedicated to building responsive, scalable software solutions.
+          </p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary hover-trigger">
+              <i class="fa-solid fa-code-branch"></i> View Projects
+            </a>
+            <a href="assets/resume.pdf" download="Jeeya_Chollangi_Resume.pdf" class="btn btn-outline hover-trigger">
+              <i class="fa-solid fa-download"></i> Download Resume
+            </a>
+          </div>
+        </div>
+        
+        <div class="hero-visual scroll-reveal delay-2">
+          <div class="glass-photo-frame">
+            <div class="glow-sphere sphere-1"></div>
+            <div class="glow-sphere sphere-2"></div>
+            <div class="inner-frame">
+              <!-- Real Profile Image -->
+              <img src="assets/profile.png" alt="Jeeya Chollangi" class="profile-img">
+            </div>
+            
+            <!-- Tech tag floaters -->
+            <div class="floating-badge badge-1">
+              <i class="fa-brands fa-python python-color"></i>
+              <span>Python & Java</span>
+            </div>
+            <div class="floating-badge badge-2">
+              <i class="fa-solid fa-brain css-color"></i>
+              <span>AI & ML Student</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-down-arrow">
+        <a href="#about" aria-label="Scroll to About Me Section">
+          <span></span>
+          <span></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section class="about-section" id="about">
+      <div class="section-container">
+        <div class="section-title-wrapper scroll-reveal">
+          <span class="section-subtitle">01 . Introduction</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="title-underline"></div>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-content scroll-reveal">
+            <h3>Developer Profile</h3>
+            <p>
+              I am a Computer Science student specializing in Artificial Intelligence and Machine Learning, with a strong interest in Python development and building interactive web applications. My coding philosophy revolves around writing clean, readable code and breaking down complex logical challenges into manageable solutions.
+            </p>
+            <p>
+              Rather than just writing code, I enjoy learning how systems connect—from structuring relational databases in MySQL to building responsive frontends. I am actively seeking opportunities to collaborate with developers, contribute to real-world projects, and continuously expand my programming knowledge.
+            </p>
+            
+            <div class="about-stats">
+              <div class="stat-card glass-card hover-trigger">
+                <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <h4 class="stat-number">7.8</h4>
+                <p class="stat-label">B.Tech CGPA</p>
+              </div>
+              <div class="stat-card glass-card hover-trigger">
+                <div class="stat-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <h4 class="stat-number">2</h4>
+                <p class="stat-label">Virtual Internships</p>
+              </div>
+              <div class="stat-card glass-card hover-trigger">
+                <div class="stat-icon"><i class="fa-solid fa-code"></i></div>
+                <h4 class="stat-number">2+</h4>
+                <p class="stat-label">Core Projects</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-details scroll-reveal delay-2">
+            <div class="glass-card details-card">
+              <h3 class="details-card-title">Technical Interests & Goals</h3>
+              
+              <ul class="details-list">
+                <li>
+                  <div class="details-icon"><i class="fa-solid fa-circle-notch"></i></div>
+                  <div class="details-text">
+                    <strong>Languages & Web:</strong> Exploring Python scripts, Java programming, and front-end development using HTML, CSS, and JavaScript.
+                  </div>
+                </li>
+                <li>
+                  <div class="details-icon"><i class="fa-solid fa-circle-notch"></i></div>
+                  <div class="details-text">
+                    <strong>AI & ML Foundations:</strong> Understanding predictive modeling, data parsing, and model optimization structures.
+                  </div>
+                </li>
+                <li>
+                  <div class="details-icon"><i class="fa-solid fa-circle-notch"></i></div>
+                  <div class="details-text">
+                    <strong>Continuous Learning:</strong> Dedicated to studying clean code methodologies, version control practices, and database schema design.
+                  </div>
+                </li>
+              </ul>
+              
+              <div class="achievements-box">
+                <h4>Key Focus Areas</h4>
+                <div class="achievement-tag"><i class="fa-solid fa-check"></i> Eager to solve logic-driven algorithm challenges</div>
+                <div class="achievement-tag"><i class="fa-solid fa-laptop-code"></i> Practical practice in HTML, CSS, JS, and Python</div>
+                <div class="achievement-tag"><i class="fa-solid fa-book"></i> Active student at Ideal Institute of Engineering College</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+      <div class="section-container">
+        <div class="section-title-wrapper scroll-reveal">
+          <span class="section-subtitle">02 . Technical Skills</span>
+          <h2 class="section-title">My Skills</h2>
+          <div class="title-underline"></div>
+        </div>
+        
+        <div class="skills-grid">
+          <div class="skills-intro scroll-reveal">
+            <h3>Technical Expertise & Tools</h3>
+            <p>
+              I have developed a strong foundation in frontend technologies, programming languages, and databases. Below is the summary of my skills.
+            </p>
+            
+            <div class="tech-stack-showcase">
+              <span class="tech-badge-item"><i class="fa-brands fa-html5"></i> HTML5</span>
+              <span class="tech-badge-item"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+              <span class="tech-badge-item"><i class="fa-brands fa-js"></i> JavaScript</span>
+              <span class="tech-badge-item"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+              <span class="tech-badge-item"><i class="fa-brands fa-python"></i> Python</span>
+              <span class="tech-badge-item"><i class="fa-brands fa-java"></i> Java</span>
+              <span class="tech-badge-item"><i class="fa-solid fa-database"></i> MySQL</span>
+              <span class="tech-badge-item"><i class="fa-brands fa-git-alt"></i> Git / GitHub</span>
+              <span class="tech-badge-item"><i class="fa-solid fa-gear"></i> SAP</span>
+            </div>
+          </div>
+          
+          <div class="skills-bars-container glass-card scroll-reveal delay-2">
+            
+            <!-- Skill Bar: Python -->
+            <div class="skill-group">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-python skill-icon python-color"></i> Python</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-progress="90%" style="width: 0%"></div>
+              </div>
+            </div>
+
+            <!-- Skill Bar: Java -->
+            <div class="skill-group">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-java skill-icon sql-color"></i> Java</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-progress="80%" style="width: 0%"></div>
+              </div>
+            </div>
+            
+            <!-- Skill Bar: JavaScript -->
+            <div class="skill-group">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-js skill-icon js-color"></i> JavaScript (ES6+)</span>
+                <span class="skill-percent">80%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-progress="80%" style="width: 0%"></div>
+              </div>
+            </div>
+            
+            <!-- Skill Bar: MySQL -->
+            <div class="skill-group">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-solid fa-database skill-icon sql-color"></i> MySQL Database</span>
+                <span class="skill-percent">82%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-progress="82%" style="width: 0%"></div>
+              </div>
+            </div>
+
+            <!-- Skill Bar: HTML / CSS / Bootstrap -->
+            <div class="skill-group">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-html5 skill-icon html-color"></i> HTML, CSS & Bootstrap</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-progress="88%" style="width: 0%"></div>
+              </div>
+            </div>
+            
+            <!-- Skill Bar: Git & GitHub -->
+            <div class="skill-group">
+              <div class="skill-info">
+                <span class="skill-name"><i class="fa-brands fa-git-alt skill-icon git-color"></i> Git, GitHub & VS Code</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-progress="85%" style="width: 0%"></div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+      <div class="section-container">
+        <div class="section-title-wrapper scroll-reveal">
+          <span class="section-subtitle">03 . Portfolio Showcase</span>
+          <h2 class="section-title">My Projects</h2>
+          <div class="title-underline"></div>
+        </div>
+        
+        <!-- Category Filter Buttons -->
+        <div class="project-filters scroll-reveal">
+          <button class="filter-btn active hover-trigger" data-filter="all">All Projects</button>
+          <button class="filter-btn hover-trigger" data-filter="web">Web Apps</button>
+          <button class="filter-btn hover-trigger" data-filter="portfolio">Portfolio</button>
+        </div>
+        
+        <div class="projects-grid">
+          
+          <!-- Project Card 1 (To-Do List) -->
+          <div class="project-card glass-card scroll-reveal" data-category="web">
+            <div class="project-img-wrapper">
+              <!-- Premium SVG illustration: To Do List Web App -->
+              <svg class="project-svg" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="p-grad-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#0f172a" />
+                    <stop offset="100%" stop-color="#020617" />
+                  </linearGradient>
+                  <linearGradient id="p-accent-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#ec4899" />
+                    <stop offset="100%" stop-color="#8b5cf6" />
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="220" fill="url(#p-grad-2)" rx="8" />
+                <g stroke="rgba(255,255,255,0.02)" stroke-width="1">
+                  <line x1="50" y1="0" x2="50" y2="220" />
+                  <line x1="100" y1="0" x2="100" y2="220" />
+                  <line x1="150" y1="0" x2="150" y2="220" />
+                  <line x1="200" y1="0" x2="200" y2="220" />
+                  <line x1="250" y1="0" x2="250" y2="220" />
+                  <line x1="300" y1="0" x2="300" y2="220" />
+                  <line x1="350" y1="0" x2="350" y2="220" />
+                </g>
+                <!-- Kanban Cards -->
+                <!-- Column 1 -->
+                <rect x="20" y="30" width="105" height="160" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" />
+                <text x="30" y="48" fill="rgba(255,255,255,0.6)" font-family="sans-serif" font-weight="bold" font-size="9">TO DO</text>
+                
+                <rect x="25" y="60" width="95" height="35" rx="4" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.08)" />
+                <rect x="32" y="68" width="50" height="4" rx="2" fill="rgba(255,255,255,0.3)" />
+                <rect x="32" y="76" width="75" height="3" rx="1.5" fill="rgba(255,255,255,0.15)" />
+                
+                <!-- Column 2 (Active/Glow) -->
+                <rect x="145" y="30" width="110" height="160" rx="6" fill="rgba(99,102,241,0.05)" stroke="rgba(99,102,241,0.2)" />
+                <text x="155" y="48" fill="#a5b4fc" font-family="sans-serif" font-weight="bold" font-size="9">IN PROGRESS</text>
+                
+                <rect x="150" y="60" width="100" height="45" rx="4" fill="rgba(255,255,255,0.07)" stroke="url(#p-accent-2)" stroke-width="1" />
+                <rect x="158" y="70" width="60" height="5" rx="2" fill="url(#p-accent-2)" />
+                <rect x="158" y="80" width="80" height="3" rx="1.5" fill="rgba(255,255,255,0.3)" />
+                <rect x="158" y="86" width="40" height="3" rx="1.5" fill="rgba(255,255,255,0.15)" />
+                
+                <!-- Column 3 -->
+                <rect x="275" y="30" width="105" height="160" rx="6" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.05)" />
+                <text x="285" y="48" fill="rgba(255,255,255,0.6)" font-family="sans-serif" font-weight="bold" font-size="9">DONE</text>
+                
+                <rect x="280" y="60" width="95" height="35" rx="4" fill="rgba(16,185,129,0.05)" stroke="rgba(16,185,129,0.1)" />
+                <rect x="287" y="68" width="45" height="4" rx="2" fill="#10b981" />
+                <circle cx="360" cy="70" r="5" fill="#10b981" />
+              </svg>
+              <div class="project-overlay">
+                <a href="https://github.com/jeeyachollangi" target="_blank" class="project-action-icon hover-trigger" aria-label="View Code on GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="project-action-icon hover-trigger" aria-label="View Live Project Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            
+            <div class="project-details">
+              <span class="project-tag">HTML5, CSS3, JavaScript</span>
+              <h3 class="project-title">To-Do List Web Application</h3>
+              <p class="project-description">
+                A responsive and user-friendly task planner featuring add, delete, and mark-as-complete capabilities. Utilizes DOM manipulation, event handling, and basic input validation.
+              </p>
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>DOM</span>
+              </div>
+              <div class="project-footer-links">
+                <a href="https://github.com/jeeyachollangi" target="_blank" class="project-link hover-trigger"><i class="fa-brands fa-github"></i> Source Code</a>
+                <a href="#" class="project-link hover-trigger"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Project Card 2 (Portfolio) -->
+          <div class="project-card glass-card scroll-reveal delay-2" data-category="portfolio">
+            <div class="project-img-wrapper">
+              <!-- Premium SVG illustration: Portfolio Showcase -->
+              <svg class="project-svg" viewBox="0 0 400 220" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="p-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#1e1b4b" />
+                    <stop offset="100%" stop-color="#311042" />
+                  </linearGradient>
+                  <linearGradient id="p-accent-1" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stop-color="#8b5cf6" />
+                    <stop offset="100%" stop-color="#06b6d4" />
+                  </linearGradient>
+                </defs>
+                <rect width="400" height="220" fill="url(#p-grad-1)" rx="8" />
+                <g opacity="0.15">
+                  <path d="M 0,110 Q 100,50 200,110 T 400,110" fill="none" stroke="#ffffff" stroke-width="1.5" />
+                </g>
+                <rect x="20" y="20" width="360" height="180" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" />
+                <line x1="20" y1="50" x2="380" y2="50" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" />
+                <circle cx="40" cy="35" r="5" fill="#ef4444" />
+                <circle cx="55" cy="35" r="5" fill="#f59e0b" />
+                <circle cx="70" cy="35" r="5" fill="#10b981" />
+                <text x="90" y="40" fill="rgba(255,255,255,0.4)" font-family="Fira Code, monospace" font-size="10">jeeya_portfolio.html</text>
+                <path d="M 40,160 L 100,120 L 160,140 L 220,90 L 280,105 L 340,70" fill="none" stroke="url(#p-accent-1)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <div class="project-overlay">
+                <a href="https://github.com/jeeyachollangi" target="_blank" class="project-action-icon hover-trigger" aria-label="View Code on GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="#" class="project-action-icon hover-trigger" aria-label="View Live Project Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              </div>
+            </div>
+            
+            <div class="project-details">
+              <span class="project-tag">HTML5, CSS3, JS, Git</span>
+              <h3 class="project-title">Personal Developer Portfolio</h3>
+              <p class="project-description">
+                A personal portfolio designed to showcase academic projects, certifications, virtual internships, and core programming skills with an aesthetic dark glassmorphism theme.
+              </p>
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span>Vanilla CSS</span>
+                <span>JavaScript</span>
+                <span>Git</span>
+              </div>
+              <div class="project-footer-links">
+                <a href="https://github.com/jeeyachollangi" target="_blank" class="project-link hover-trigger"><i class="fa-brands fa-github"></i> Source Code</a>
+                <a href="#" class="project-link hover-trigger"><i class="fa-solid fa-up-right-from-square"></i> Live Demo</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- My Journey Section -->
+    <section class="journey-section" id="journey">
+      <div class="section-container">
+        <div class="section-title-wrapper scroll-reveal">
+          <span class="section-subtitle">04 . Academic & Professional Path</span>
+          <h2 class="section-title">My Journey</h2>
+          <div class="title-underline"></div>
+        </div>
+        
+        <div class="journey-grid">
+          <!-- Education Column -->
+          <div class="journey-col">
+            <h3 class="journey-col-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+            <div class="journey-cards-list">
+              <!-- B.Tech Card -->
+              <div class="journey-card glass-card hover-trigger scroll-reveal">
+                <span class="journey-date">2023 - 2027 (Expected)</span>
+                <h4 class="journey-title">B.Tech In Computer Science And Engineering (AI & ML)</h4>
+                <h5 class="journey-institution">Ideal Institute of Engineering College</h5>
+                <p class="journey-desc">Specializing in AI models and data systems. Relational database structures and Python-based logic modeling. <strong>CGPA: 7.8/10.0</strong></p>
+              </div>
+              <!-- Intermediate Card -->
+              <div class="journey-card glass-card hover-trigger scroll-reveal delay-2">
+                <span class="journey-date">2021 - 2023</span>
+                <h4 class="journey-title">Intermediate Education</h4>
+                <h5 class="journey-institution">Pragati Junior College</h5>
+                <p class="journey-desc">Focused on core MPC (Mathematics, Physics, Chemistry) analytical studies.</p>
+              </div>
+              <!-- 10th Card -->
+              <div class="journey-card glass-card hover-trigger scroll-reveal">
+                <span class="journey-date">2020 - 2021</span>
+                <h4 class="journey-title">10th Class</h4>
+                <h5 class="journey-institution">Little Buds School</h5>
+                <p class="journey-desc">Completed secondary school education with solid foundations.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Experience/Internships Column -->
+          <div class="journey-col">
+            <h3 class="journey-col-title"><i class="fa-solid fa-briefcase"></i> Internships</h3>
+            <div class="journey-cards-list">
+              <!-- APCHE Card -->
+              <div class="journey-card glass-card hover-trigger scroll-reveal delay-2">
+                <span class="journey-date">Virtual Experience</span>
+                <h4 class="journey-title">APCHE Web Full Stack Internship</h4>
+                <h5 class="journey-institution">Virtual Internship</h5>
+                <p class="journey-desc">Acquired virtual hands-on experience in building and deploying responsive full stack web applications.</p>
+              </div>
+              <!-- EduSkill Card -->
+              <div class="journey-card glass-card hover-trigger scroll-reveal">
+                <span class="journey-date">Virtual Experience</span>
+                <h4 class="journey-title">EduSkill AI & ML Virtual Internship</h4>
+                <h5 class="journey-institution">Virtual Internship</h5>
+                <p class="journey-desc">Explored Machine Learning algorithms, predictive modeling libraries, and data parsing structures in Python.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications-section" id="certifications">
+      <div class="section-container">
+        <div class="section-title-wrapper scroll-reveal">
+          <span class="section-subtitle">05 . Credentials</span>
+          <h2 class="section-title">Certifications</h2>
+          <div class="title-underline"></div>
+        </div>
+        
+        <div class="certifications-grid">
+          
+          <!-- Cert Card 1 -->
+          <div class="cert-card glass-card scroll-reveal hover-trigger">
+            <div class="cert-icon-box">
+              <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">Red Hat Academy</span>
+              <h3 class="cert-title">Python Programming with Red Hat</h3>
+              <p class="cert-info">Red Hat System Administration AD141 Course attendance certificate. Verifies skills in scripting, data structures, and object-oriented Python concepts.</p>
+              <div class="cert-footer">
+                <a href="assets/python_redhat.pdf" target="_blank" class="cert-btn hover-trigger"><i class="fa-solid fa-magnifying-glass"></i> View Certificate</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Cert Card 2 -->
+          <div class="cert-card glass-card scroll-reveal delay-2 hover-trigger">
+            <div class="cert-icon-box">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">EduSkills (Google for Developers)</span>
+              <h3 class="cert-title">AI-ML Virtual Internship</h3>
+              <p class="cert-info">Successfully completed 10 weeks of hands-on virtual internship under the India Edu Program supported by Google for Developers.</p>
+              <div class="cert-footer">
+                <a href="assets/aiml_internship.pdf" target="_blank" class="cert-btn hover-trigger"><i class="fa-solid fa-magnifying-glass"></i> View Certificate</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cert Card 3 -->
+          <div class="cert-card glass-card scroll-reveal hover-trigger">
+            <div class="cert-icon-box">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="cert-body">
+              <span class="cert-issuer">EduSkills (AICTE)</span>
+              <h3 class="cert-title">Ethical Hacking Virtual Internship</h3>
+              <p class="cert-info">Completed a 10-week virtual internship in Ethical Hacking, gaining hands-on knowledge in network security and vulnerability assessment.</p>
+              <div class="cert-footer">
+                <a href="assets/ethical_hacking.pdf" target="_blank" class="cert-btn hover-trigger"><i class="fa-solid fa-magnifying-glass"></i> View Certificate</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+      <div class="section-container">
+        <div class="section-title-wrapper scroll-reveal">
+          <span class="section-subtitle">06 . Let's Connect</span>
+          <h2 class="section-title">Contact Me</h2>
+          <div class="title-underline"></div>
+        </div>
+        
+        <div class="contact-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info-col scroll-reveal">
+            <h3>Let's collaborate on your next project!</h3>
+            <p class="contact-lead-text">
+              Have a web application to build? Need help with Python programming or relational SQL databases? Reach out through the form or my social media channels.
+            </p>
+            
+            <div class="contact-details-list">
+              <!-- Detail Item 1 -->
+              <div class="contact-detail-item glass-card hover-trigger">
+                <div class="detail-icon-wrapper">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="detail-content">
+                  <span class="detail-label">Email Me</span>
+                  <a href="mailto:jeeyachollangi@gmail.com" class="detail-value">jeeyachollangi@gmail.com</a>
+                </div>
+              </div>
+              
+              <!-- Phone number column removed for privacy -->
+              
+              <!-- Detail Item 3 -->
+              <div class="contact-detail-item glass-card hover-trigger">
+                <div class="detail-icon-wrapper">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </div>
+                <div class="detail-content">
+                  <span class="detail-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/jeeya-chollangi" target="_blank" class="detail-value">linkedin.com/in/jeeya-chollangi</a>
+                </div>
+              </div>
+              
+              <!-- Detail Item 4 -->
+              <div class="contact-detail-item glass-card hover-trigger">
+                <div class="detail-icon-wrapper">
+                  <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="detail-content">
+                  <span class="detail-label">GitHub Profile</span>
+                  <a href="https://github.com/jeeyachollangi" target="_blank" class="detail-value">github.com/jeeyachollangi</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Contact Form Column -->
+          <div class="contact-form-col glass-card scroll-reveal delay-2">
+            <h3 class="form-title">Send a Message</h3>
+            
+            <form class="contact-form" id="portfolio-contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name">Your Name <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input type="text" id="form-name" name="name" placeholder="John Doe" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="form-email">Your Email <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="email" id="form-email" name="email" placeholder="john@example.com" required>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-bookmark input-icon"></i>
+                  <input type="text" id="form-subject" name="subject" placeholder="Project collaboration proposal">
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="form-message">Message <span class="required">*</span></label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fa-regular fa-message input-icon text-area-icon"></i>
+                  <textarea id="form-message" name="message" rows="5" placeholder="Hi Jeeya, I'd like to work with you on..." required></textarea>
+                </div>
+              </div>
+              
+              <button type="submit" class="btn btn-primary btn-submit hover-trigger" id="form-submit-btn">
+                <span class="btn-text">Send Message</span>
+                <i class="fa-regular fa-paper-plane"></i>
+              </button>
+              
+              <!-- Form Success/Error Message Container -->
+              <div class="form-response-msg" id="form-response"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <a href="#home" class="logo footer-logo hover-trigger">
+          <span>&lt;/&gt;</span> Jeeya<span class="accent-dot">.</span>
+        </a>
+        <p class="footer-summary">
+          Crafting functional programming logic, MySQL database backends, and responsive user experiences.
+        </p>
+        <div class="footer-socials">
+          <a href="https://github.com/jeeyachollangi" target="_blank" class="social-link hover-trigger" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/jeeya-chollangi" target="_blank" class="social-link hover-trigger" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:jeeyachollangi@gmail.com" class="social-link hover-trigger" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 Jeeya Chollangi. All Rights Reserved. Built for premium performance.
+        </p>
+        <ul class="footer-meta-links">
+          <li><a href="#about" class="hover-trigger">About</a></li>
+          <li><a href="#projects" class="hover-trigger">Projects</a></li>
+          <li><a href="#contact" class="hover-trigger">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top-btn" id="back-to-top" aria-label="Scroll back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
